@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    background-color:rgb(170, 170, 170);
+}
+.heading{
+    width: 22%;
+    font-family:Verdana;
+    font-weight: bold;
+    color: rgb(153,0,0);
+    font-size:30px;
+    text-shadow: 4px 5px 5px rgb(107, 107, 107);
+    padding: 12px;
+    animation:heading 2s ease-out forwards;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+}
+.nav a{
+    text-decoration: none;
+}
+.imagei{
+    width: 450px;
+    position: relative;
+    overflow: hidden;
+    float: right;
+}
+.description{
+    font-size: x-large;
+    text-align: center;
+    position: absolute;
+    top: 380px;
+    left: 50px;
+    display: none;
+    color:black;
+}
+.imagei:hover .description{
+    display: block;
+    animation: description 0.4s linear forwards;
+}
+@keyframes description{
+    from{
+        transform: translateX(300px);
+    }
+    to{
+        transform: translateX(50px);
+    }
+}
+.greeting{
+    text-align: center;
+    font-size: xx-large;
+
+}
+ul{
+    list-style-type: none;
+}
+main{
+    height: 2800px;
+}
+.pricing{
+    text-align: center;
+}
+.imagei h2{
+    text-align: center;
+}
+.imagei .button{
+    width: 100%;
+    height: 40px;
+    border: 0;
+}
+.imagei .button a{
+    background-color: rgb(153,0,0);
+    width: 100%;
+    text-decoration: none;
+    color:wheat;
+    font-weight: bold;
+    height: 100%;
+    padding: 7px;
+    border-radius: 5px;
+}
+.imagei .button a:hover{
+    background-color: wheat;
+    color: rgb(153,0,0);
+    border: 2px solid rgb(153,0,0);
+    box-shadow: 4px 4px 4px gray;
+    text-shadow: 4px 4px 4px rgb(61, 42, 42);
+}
+.imagei .cartbutton{
+    width: 100%;
+    height: 40px;
+    padding: 3px;
+    background-color: black;
+    border-radius: 50px;
+}
+.imagei a{
+    background-color: orange;
+    color: black;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+.imagei a:hover{
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 50px;
+    font-size: larger;
+    padding: 0;
+    text-shadow: 4px 4px 4px rgb(61, 42, 42);
+}
+.delete{
+    text-align: center;    
+}
+#details h4{
+    color: rgb(153,0,0);
+}
+#details p{
+    font-size: large;
+}
+.copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    height: auto;
+    background-color: rgb(122, 122, 122);
+}
+@media screen and (min-width:992px) and (max-width:1070px) {
+    .heading{
+        width: 25%;
+    }
+    main{
+        height: 2800px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .heading{
+        width: 30%;
+        font-size: larger;
+    }
+    .imagei{
+        float: none;
+        margin-left: 20%;
+    }
+    main{
+        height: 3700px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:768px) {
+    .heading{
+        width: 40%;
+        font-size: larger;
+    }
+    .imagei{
+        float: none;
+        margin-left: 10%;
+    }
+    main{
+        height: 3700px;
+        font-size: x-small;
+    }
+}
+@media screen and (max-width:575px) {
+    header{
+        display: block;
+    }
+    .heading{
+        width:100%;
+        text-align: center;
+    }
+    .imagei{
+        float: none;
+        margin-left: 5%;
+    }
+    main{
+        height: 3800px;
+        font-size: x-small;
+    }
+}

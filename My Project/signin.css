@@ -1,0 +1,799 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 5px gray;
+    overflow:hidden;
+    background-color: rgb(151, 138, 138);
+}
+.heading{
+    width: 25%;
+    margin-left: 20px;
+    font-family:Verdana;
+    font-weight: bold;
+    color: rgb(153,0,0);
+    font-size:40px;
+    text-shadow: 3px 3px 5px grey;
+    font-weight: bold;
+    animation:heading 2s ease-out forwards;
+}
+#submit:hover{
+    font-size: 15px;
+    background-color: wheat;
+    color: rgb(153,0,0);
+    box-shadow: 3px 3px 3px gray;
+}
+#reset:hover{
+    font-size: 15px;
+    background-color: wheat;
+    color: rgb(153,0,0);
+    box-shadow: 3px 3px 3px gray;
+}
+#signup:hover{
+    font-size: 15px;
+    background-color: wheat;
+    color: rgb(153,0,0);
+    box-shadow: 3px 3px 3px gray;
+}
+@keyframes heading{
+    from{
+        transform: translateY(100px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+a{
+    text-decoration: none;
+    color:rgb(153,0,0);
+    transition: 0.6s linear;
+    /* padding: 1px 3px 1px 2px; */
+}
+a:hover{
+    background-color:rgb(153,0,0);
+    color: wheat;
+    cursor: pointer;
+}
+form .type{
+    border-radius: 3px;
+    border: 0px;
+    height: 20px;
+}
+.greeting{
+    width: 75%;
+    display: flex;
+    color: rgb(153,0,0);
+    text-shadow: 3px 3px 5px grey;
+    font-family: cursive;
+    margin-left: 20px;
+    font-size:60px; 
+    /* position: relative;
+    bottom:100px; */
+}
+.icon img{
+    padding: 3px;
+}
+.one{
+    animation:one 6s linear forwards;
+}
+@keyframes one{
+    0%{
+        transform: translateY(-500px);
+    }
+    20%{
+        transform: translateY(0px);
+    }
+    40%{
+        transform: rotateY(180deg);
+    }
+    60%{
+        transform: translateY(-10px);
+    }
+    80%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: translateX(0px); 
+    }
+}
+.two{
+    animation:two 7s linear forwards;
+}
+@keyframes two{
+    0%{
+        transform: translateY(-400px);
+    }
+    20%{
+        transform: translateY(0px);
+    }
+    40%{
+        transform: rotateY(180deg);
+    }
+    60%{
+        transform: translateY(-10px);
+    }
+    80%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: translateX(30px); 
+    }
+}
+.three{
+    animation:three 8s linear forwards;
+}
+@keyframes three{
+    0%{
+        transform: translateY(-300px);
+    }
+    20%{
+        transform: translateY(0px);
+    }
+    40%{
+        transform: rotateY(180deg);
+    }
+    60%{
+        transform: translateY(-10px);
+    }
+    80%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: translateX(60px); 
+    }
+}
+.four{
+    animation: four 9s linear forwards;
+}
+@keyframes four{
+    0%{
+        transform: translateY(-200px);
+    }
+    20%{
+        transform: translateY(0px);
+    }
+    40%{
+        transform: rotateY(180deg);
+    }
+    60%{
+        transform: translateY(-10px);
+    }
+    80%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: translateX(90px); 
+    }
+}
+.five{
+    animation:five 10s linear forwards;
+}
+@keyframes five{
+    0%{
+        transform: translateY(-150px);
+    }
+    20%{
+        transform: translateY(0px);
+    }
+    40%{
+        transform: rotateY(180deg);
+    }
+    60%{
+        transform: translateY(-10px);
+    }
+    80%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: translateX(100px); 
+    }
+}
+main{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background-image: url(Logo/image12.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    height: auto;
+    background-color: rgb(151, 138, 138);
+}
+.footer{
+    animation: footer 2s linear forwards;
+}
+@keyframes footer{
+    from{
+        transform: translateY(300px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form div, label{
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:wheat;
+}
+.button{
+    border-radius: 5px;
+    border: 0px;
+    background-color: wheat;
+    border:1px solid wheat;
+    transition: 0.4s linear;
+    height: auto;
+}
+.button a{
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+}
+#submit, #reset, #signup{
+    padding: 5px;
+    border-radius: 5px;
+    border: 0px;
+    color: wheat;
+    background-color: rgb(153,0,0);
+    border:1px solid wheat;
+    transition: 0.4s linear;
+}
+#email{
+    margin-left: 17px;
+}
+@media screen and (min-width:992px) and (max-width:1100px) {
+    header{
+        display: block;
+        height: auto;
+    }
+    .heading{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .greeting{
+        width: 100%;
+    }
+    .one{
+        animation:one 6s linear forwards;
+    }
+    @keyframes one{
+        0%{
+            transform: translateY(-500px);
+        }
+        20%{
+            transform: translateY(0px);
+        }
+        40%{
+            transform: rotateY(180deg);
+        }
+        60%{
+            transform: translateY(-10px);
+        }
+        80%{
+            transform: rotateY(180deg);
+        }
+        100%{
+            transform: translateX(100px); 
+        }
+    }
+    .two{
+        animation:two 7s linear forwards;
+    }
+    @keyframes two{
+        0%{
+            transform: translateY(-400px);
+        }
+        20%{
+            transform: translateY(0px);
+        }
+        40%{
+            transform: rotateY(180deg);
+        }
+        60%{
+            transform: translateY(-10px);
+        }
+        80%{
+            transform: rotateY(180deg);
+        }
+        100%{
+            transform: translateX(130px); 
+        }
+    }
+    .three{
+        animation:three 8s linear forwards;
+    }
+    @keyframes three{
+        0%{
+            transform: translateY(-300px);
+        }
+        20%{
+            transform: translateY(0px);
+        }
+        40%{
+            transform: rotateY(180deg);
+        }
+        60%{
+            transform: translateY(-10px);
+        }
+        80%{
+            transform: rotateY(180deg);
+        }
+        100%{
+            transform: translateX(160px); 
+        }
+    }
+    .four{
+        animation: four 9s linear forwards;
+    }
+    @keyframes four{
+        0%{
+            transform: translateY(-200px);
+        }
+        20%{
+            transform: translateY(0px);
+        }
+        40%{
+            transform: rotateY(180deg);
+        }
+        60%{
+            transform: translateY(-10px);
+        }
+        80%{
+            transform: rotateY(180deg);
+        }
+        100%{
+            transform: translateX(190px); 
+        }
+    }
+    .five{
+        animation:five 10s linear forwards;
+    }
+    @keyframes five{
+        0%{
+            transform: translateY(-150px);
+        }
+        20%{
+            transform: translateY(0px);
+        }
+        40%{
+            transform: rotateY(180deg);
+        }
+        60%{
+            transform: translateY(-10px);
+        }
+        80%{
+            transform: rotateY(180deg);
+        }
+        100%{
+            transform: translateX(200px); 
+        }
+    }
+    main{
+        height: 340px;
+        background-image: url(Logo/image13.jpg);
+    }  
+}
+@media screen and (min-width:786px) and (max-width:992px) {
+        header{
+            display: block;
+        }
+        .heading{
+            width: 100%;
+            text-align: center;
+        }
+        .greeting{
+            width: 100%;
+        }
+        .one{
+        animation:one 6s linear forwards;
+    }
+    @keyframes one{
+        0%{
+            transform: translateY(-500px);
+        }
+        20%{
+            transform: translateY(0px);
+        }
+        40%{
+            transform: rotateY(180deg);
+        }
+        60%{
+            transform: translateY(-10px);
+        }
+        80%{
+            transform: rotateY(180deg);
+        }
+        100%{
+            transform: translateX(100px); 
+        }
+    }
+    .two{
+        animation:two 7s linear forwards;
+    }
+    @keyframes two{
+        0%{
+            transform: translateY(-400px);
+        }
+        20%{
+            transform: translateY(0px);
+        }
+        40%{
+            transform: rotateY(180deg);
+        }
+        60%{
+            transform: translateY(-10px);
+        }
+        80%{
+            transform: rotateY(180deg);
+        }
+        100%{
+            transform: translateX(130px); 
+        }
+    }
+    .three{
+        animation:three 8s linear forwards;
+    }
+    @keyframes three{
+        0%{
+            transform: translateY(-300px);
+        }
+        20%{
+            transform: translateY(0px);
+        }
+        40%{
+            transform: rotateY(180deg);
+        }
+        60%{
+            transform: translateY(-10px);
+        }
+        80%{
+            transform: rotateY(180deg);
+        }
+        100%{
+            transform: translateX(160px); 
+        }
+    }
+    .four{
+        animation: four 9s linear forwards;
+    }
+    @keyframes four{
+        0%{
+            transform: translateY(-200px);
+        }
+        20%{
+            transform: translateY(0px);
+        }
+        40%{
+            transform: rotateY(180deg);
+        }
+        60%{
+            transform: translateY(-10px);
+        }
+        80%{
+            transform: rotateY(180deg);
+        }
+        100%{
+            transform: translateX(190px); 
+        }
+    }
+    .five{
+        animation:five 10s linear forwards;
+    }
+    @keyframes five{
+        0%{
+            transform: translateY(-150px);
+        }
+        20%{
+            transform: translateY(0px);
+        }
+        40%{
+            transform: rotateY(180deg);
+        }
+        60%{
+            transform: translateY(-10px);
+        }
+        80%{
+            transform: rotateY(180deg);
+        }
+        100%{
+            transform: translateX(200px); 
+        }
+    }
+        main{
+            height: 340px;
+            background-image: url(Logo/imagee.jpg);
+        }
+}
+@media screen and (min-width:576px) and (max-width:786px) {
+    header{
+        display: block;
+    }
+    .heading{
+        text-align: center;
+        width: 100%;
+    }
+    .greeting{
+        width: 100%;
+        font-size: 50px;
+    }
+    .one{
+        animation:one 6s linear forwards;
+    }
+    @keyframes one{
+        0%{
+            transform: translateY(-500px);
+        }
+        20%{
+            transform: translateY(0px);
+        }
+        40%{
+            transform: rotateY(180deg);
+        }
+        60%{
+            transform: translateY(-10px);
+        }
+        80%{
+            transform: rotateY(180deg);
+        }
+        100%{
+            transform: translateX(20px); 
+        }
+    }
+    .two{
+        animation:two 7s linear forwards;
+    }
+    @keyframes two{
+        0%{
+            transform: translateY(-400px);
+        }
+        20%{
+            transform: translateY(0px);
+        }
+        40%{
+            transform: rotateY(180deg);
+        }
+        60%{
+            transform: translateY(-10px);
+        }
+        80%{
+            transform: rotateY(180deg);
+        }
+        100%{
+            transform: translateX(30px); 
+        }
+    }
+    .three{
+        animation:three 8s linear forwards;
+    }
+    @keyframes three{
+        0%{
+            transform: translateY(-300px);
+        }
+        20%{
+            transform: translateY(0px);
+        }
+        40%{
+            transform: rotateY(180deg);
+        }
+        60%{
+            transform: translateY(-10px);
+        }
+        80%{
+            transform: rotateY(180deg);
+        }
+        100%{
+            transform: translateX(60px); 
+        }
+    }
+    .four{
+        animation: four 9s linear forwards;
+    }
+    @keyframes four{
+        0%{
+            transform: translateY(-200px);
+        }
+        20%{
+            transform: translateY(0px);
+        }
+        40%{
+            transform: rotateY(180deg);
+        }
+        60%{
+            transform: translateY(-10px);
+        }
+        80%{
+            transform: rotateY(180deg);
+        }
+        100%{
+            transform: translateX(90px); 
+        }
+    }
+    .five{
+        animation:five 10s linear forwards;
+    }
+    @keyframes five{
+        0%{
+            transform: translateY(-150px);
+        }
+        20%{
+            transform: translateY(0px);
+        }
+        40%{
+            transform: rotateY(180deg);
+        }
+        60%{
+            transform: translateY(-10px);
+        }
+        80%{
+            transform: rotateY(180deg);
+        }
+        100%{
+            transform: translateX(100px); 
+        }
+    }
+    main{
+        height: 350px;
+        background-image: url(Logo/image14.jpg);
+    }
+}
+@media screen and (max-width:575px) {
+    header{
+        display: block;
+    }
+    .heading{
+        text-align: center;
+        width: 100%;
+    }
+    .greeting{
+        width: 100%;
+        font-size: 30px;
+    }
+    .one{
+        animation:one 6s linear forwards;
+    }
+    @keyframes one{
+        0%{
+            transform: translateY(-500px);
+        }
+        20%{
+            transform: translateY(0px);
+        }
+        40%{
+            transform: rotateY(180deg);
+        }
+        60%{
+            transform: translateY(-10px);
+        }
+        80%{
+            transform: rotateY(180deg);
+        }
+        100%{
+            transform: translateX(20px); 
+        }
+    }
+    .two{
+        animation:two 7s linear forwards;
+    }
+    @keyframes two{
+        0%{
+            transform: translateY(-400px);
+        }
+        20%{
+            transform: translateY(0px);
+        }
+        40%{
+            transform: rotateY(180deg);
+        }
+        60%{
+            transform: translateY(-10px);
+        }
+        80%{
+            transform: rotateY(180deg);
+        }
+        100%{
+            transform: translateX(30px); 
+        }
+    }
+    .three{
+        animation:three 8s linear forwards;
+    }
+    @keyframes three{
+        0%{
+            transform: translateY(-300px);
+        }
+        20%{
+            transform: translateY(0px);
+        }
+        40%{
+            transform: rotateY(180deg);
+        }
+        60%{
+            transform: translateY(-10px);
+        }
+        80%{
+            transform: rotateY(180deg);
+        }
+        100%{
+            transform: translateX(60px); 
+        }
+    }
+    .four{
+        animation: four 9s linear forwards;
+    }
+    @keyframes four{
+        0%{
+            transform: translateY(-200px);
+        }
+        20%{
+            transform: translateY(0px);
+        }
+        40%{
+            transform: rotateY(180deg);
+        }
+        60%{
+            transform: translateY(-10px);
+        }
+        80%{
+            transform: rotateY(180deg);
+        }
+        100%{
+            transform: translateX(90px); 
+        }
+    }
+    .five{
+        animation:five 10s linear forwards;
+    }
+    @keyframes five{
+        0%{
+            transform: translateY(-150px);
+        }
+        20%{
+            transform: translateY(0px);
+        }
+        40%{
+            transform: rotateY(180deg);
+        }
+        60%{
+            transform: translateY(-10px);
+        }
+        80%{
+            transform: rotateY(180deg);
+        }
+        100%{
+            transform: translateX(100px); 
+        }
+    }
+    main{
+        height: 350px;
+        background-image: url(Logo/imagg.png);
+    }
+}
